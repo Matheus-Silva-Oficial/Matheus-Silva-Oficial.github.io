@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- --------- UNICONS ---------- -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- --------- CSS ---------- -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- --------- FAVICON ---------- -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
+
+    <title>Portfolio | Matheus</title>
+    <style>
+        .success {
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          width: 320px;
+          padding: 12px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: start;
+          background: #84D65A;
+          border-radius: 8px;
+          box-shadow: 0px 0px 5px -3px #111;
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          display: none; /* Inicialmente oculto */
+        }
+        
+        .success__icon {
+          width: 20px;
+          height: 20px;
+          transform: translateY(-2px);
+          margin-right: 8px;
+        }
+        
+        .success__icon path {
+          fill: #393A37;
+        }
+        
+        .success__title {
+          font-weight: 500;
+          font-size: 14px;
+          color: #393A37;
+        }
+        
+        .success__close {
+          width: 20px;
+          height: 20px;
+          cursor: pointer;
+          margin-left: auto;
+        }
+        
+        .success__close path {
+          fill: #393A37;
+        }
+        </style>
+</head>
+<body>
+   <div class="container">
+    <!-- --------------- HEADER --------------- -->
+      <nav id="header">
+        <div class="nav-logo">
+            <p class="nav-name">Matheus</p>
+            <span>.</span>
+        </div>
+        <div class="nav-menu" id="myNavMenu">
+            <ul class="nav_menu_list">
+                <li class="nav_list">
+                    <a href="#home" class="nav-link active-link">Início</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#about" class="nav-link">Sobre</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#projects" class="nav-link">Projetos</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#contact" class="nav-link">Contato</a>
+                    <div class="circle"></div>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-button">
+            <a href="assets/css/" download="cv.pdf" class="btn">Download CV <i class="uil uil-file-alt"></i></a>
+        </div>
+        <div class="nav-menu-btn">
+            <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+        </div>
+      </nav>
+
+
+    <!-- -------------- MAIN ---------------- -->
+    <main class="wrapper">
+       <!-- -------------- FEATURED BOX ---------------- -->
+       <section class="featured-box" id="home">
+          <div class="featured-text">
+            <div class="featured-text-card">
+                <span>Matheus Silva</span>
+            </div>
+            <div class="featured-name">
+                <p>Eu sou <span class="typedText"></span></p>
+            </div>
+            <div class="featured-text-info">
+                <p>Desenvolvedor front-end experiente, apaixonado por criar imagens visualmente impressionantes e sites fáceis de usar.
+                    Além disso, especializado na área de hacking, visando aprimorar a segurança digital e proteger sistemas contra ameaças cibernéticas.
+                </p>
+            </div>
+            <div class="featured-text-btn">
+                <button class="btn blue-btn">contate-me</button>
+                <a href="assets/cv.pdf" download="cv.pdf" class="btn">Download CV <i class="uil uil-file-alt"></i></a>
+            </div>            
+            <div class="social_icons">
+                <div class="icon"><a href="https://www.instagram.com/eusouhidra.sec/" target="_blank"><i class="uil uil-instagram"></i></a></div>
+                <div class="icon"><a href="https://www.github.com/Matheus-Silva-Oficial" target="_blank"><i class="uil uil-github-alt"></i></a></div>
+            </div>
+          </div>
+          <div class="featured-image">
+            <div class="image">
+                <img src="assets/images/avatar.png" alt="avatar">
+            </div>
+          </div>
+          <div class="scroll-icon-box">
+            <a href="#about" class="scroll-btn">
+                <i class="uil uil-mouse-alt"></i>
+                <p>Scroll ↓</p>
+            </a>
+          </div>
+
+       </section>
+       <!-- -------------- ABOUT BOX ---------------- -->
+       <section class="section" id="about">
+          <div class="top-header">
+            <h1>Sobre mim</h1>
+          </div>
+          <div class="row">
+            <div class="col">
+                <div class="about-info">
+                    <h3>Minha introdução</h3>
+                    <p>Sou bem versado em HTML, CSS e JavaScript e outras tecnologias de ponta
+                        frameworks e bibliotecas, o que me permite implementar recursos interativos.
+                        Além disso, tenho experiência em trabalhar com sistemas de gerenciamento de conteúdo (CMS) como
+                       WordPress.
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="skills-box">
+                    <div class="skills-header">
+                        <h3>Frontend</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Bootstrap</span>
+                        <span>JavaScript</span>
+                        <span>Vue</span>
+                        <span>React</span>
+                        <span>Angular</span>
+                    </div>
+                </div>
+                <div class="skills-box">
+                    <div class="skills-header">
+                        <h3>Backend</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span>PHP</span>
+                        <span>JAVA</span>
+                        <span>Python</span>
+                        <span>C++</span>
+                    </div>
+                </div>
+                <div class="skills-box">
+                    <div class="skills-header">
+                        <h3>Database</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span>MySQL</span>
+                        <span>PostgreSQL</span>
+                        <span>MongoDB</span>
+                    </div>
+                </div>
+            </div>
+          </div>
+       </section>
+
+       <!-- -------------- PROJECT BOX ---------------- -->
+
+       <section class="section" id="projects">
+          <div class="top-header">
+              <h1>Projetos</h1>
+          </div>
+          <div class="project-container">
+            <div class="project-box">
+                <i class="uil uil-briefcase-alt"></i>
+                <h3>Completados</h3>
+                <label>Mais de 10 projetos concluídos</label>
+            </div>
+            <div class="project-box">
+                <i class="uil uil-users-alt"></i>
+                <h3>Clientes</h3>
+                <label>Mais de 15 clientes felizes</label>
+            </div>
+            <div class="project-box">
+                <i class="uil uil-award"></i>
+                <h3>Experiência</h3>
+                <label>Mais de 1 anos na área</label>
+            </div>
+          </div>
+       </section>
+
+       <!-- -------------- CONTACT BOX ---------------- -->
+
+       <section class="section" id="contact">
+          <div class="top-header">
+            <h1>Entrar em contato</h1>
+            <span>Você tem um projeto em mente, entre em contato comigo aqui.</span>
+          </div>
+          <div class="row">
+            <div class="col">
+               <div class="contact-info">
+                   <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
+                   <p><i class="uil uil-envelope"></i> Email: john@doe.com</p>
+                   <p><i class="uil uil-phone"></i> Tel: +250 708 770 000</p>
+               </div>
+            </div>
+            <div class="col">
+                <div class="form-control">
+                    <form id="myForm" action="https://formsubmit.co/mathsilva1003@gmail.com" method="POST">
+                        <div class="form-inputs">
+                            <input type="name" name="name" class="input-field" placeholder="Name">
+                            <input type="email" name="email" class="input-field" placeholder="Email">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_template" value="table">
+                            <input type="hidden" name="_next" value="">
+                        </div>
+                        <div class="text-area" style="margin-top: 10px;">
+                            <textarea name="message" placeholder="Mensagem"></textarea>
+                        </div>
+                        <div class="form-button">
+                            <button id="submitButton" class="btn">Send <i class="uil uil-message"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>            
+         </div>
+       </section>
+    </main>
+
+    <div class="success" id="successCard">
+        <div class="success__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" height="24" fill="none"><path fill-rule="evenodd" fill="#393a37" d="m12 1c-6.075 0-11 4.925-11 11s4.925 11 11 11 11-4.925 11-11-4.925-11-11-11zm4.768 9.14c.0878-.1004.1546-.21726.1966-.34383.0419-.12657.0581-.26026.0477-.39319-.0105-.13293-.0475-.26242-.1087-.38085-.0613-.11844-.1456-.22342-.2481-.30879-.1024-.08536-.2209-.14938-.3484-.18828s-.2616-.0519-.3942-.03823c-.1327.01366-.2612.05372-.3782.1178-.1169.06409-.2198.15091-.3027.25537l-4.3 5.159-2.225-2.226c-.1886-.1822-.4412-.283-.7034-.2807s-.51301.1075-.69842.2929-.29058.4362-.29285.6984c-.00228.2622.09851.5148.28067.7034l3 3c.0983.0982.2159.1748.3454.2251.1295.0502.2681.0729.4069.0665.1387-.0063.2747-.0414.3991-.1032.1244-.0617.2347-.1487.3236-.2554z" clip-rule="evenodd"></path></svg>
+        </div>
+        <div class="success__title">Email enviado com sucesso.</div>
+        <div class="success__close"><svg xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 20 20" height="20"><path fill="#393a37" d="m15.8333 5.34166-1.175-1.175-4.6583 4.65834-4.65833-4.65834-1.175 1.175 4.65833 4.65834-4.65833 4.6583 1.175 1.175 4.65833-4.6583 4.6583 4.6583 1.175-1.175-4.6583-4.6583z"></path></svg></div>
+    </div>
+
+    <!-- --------------- FOOTER --------------- -->
+    <footer>
+        <div class="top-footer">
+            <p>Matheus Silva .</p>
+        </div>
+        <div class="middle-footer">
+            <ul class="footer-menu">
+                <li class="footer_menu_list">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#about">Sobre</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#projects">Projetos</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#contact">Contato</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-social-icons">
+            <div class="icon"><a href="https://www.instagram.com/eusouhidra.sec/" target="_blank"><i class="uil uil-instagram"></i></a></div>
+            <div class="icon"><a href="https://www.github.com/seu_perfil" target="_blank"><i class="uil uil-github-alt"></i></a></div>
+        </div>
+        <div class="bottom-footer">
+            <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Matheus Silva</a> - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("submitButton").addEventListener("click", function(event) {
+          event.preventDefault(); // Prevent default form submission
+        
+          // Show success card
+          document.getElementById("successCard").style.display = "flex";
+        
+          // Hide success card after 5 seconds
+          setTimeout(function() {
+            document.getElementById("successCard").style.display = "none";
+          }, 5000);
+        
+          // Submit the form
+          document.getElementById("myForm").submit();
+        });
+        </script>
+    
+        <!-- ----- TYPING JS Link ----- -->
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    
+           <!-- ----- SCROLL REVEAL JS Link----- -->
+        <script src="https://unpkg.com/scrollreveal"></script>
+    
+        <!-- ----- MAIN JS ----- -->
+        <script src="assets/js/main.js"></script>   
+    </body>
+    </html>
+    
