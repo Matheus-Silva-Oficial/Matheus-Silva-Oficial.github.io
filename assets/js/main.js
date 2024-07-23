@@ -37,7 +37,7 @@ function scrollToContact() {
 
 /* ----- TYPING EFFECT ----- */
 var typingEffect = new Typed(".typedText",{
-  strings : ["Designer","Game Developer","Developer","Hacking"],
+  strings : ["Designer","T.I","Developer"],
   loop : true,
   typeSpeed : 100, 
   backSpeed : 80,
